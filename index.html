@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,63 @@
     <link rel="stylesheet" href="css/tailwind-output.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="code.svg" type="image/x-icon">
-    <meta name="description" content="Bienvenue sur le site portfolio de Maxime Vigneron, où je vous présente tous mes projets de développement">
+    <meta name="description"
+        content="Bienvenue sur le site portfolio de Maxime Vigneron, où je vous présente tous mes projets de développement">
     <script src="https://kit.fontawesome.com/47cf0efbc5.js" crossorigin="anonymous"></script>
     <title>Maxime Vigneron - Développeur Web</title>
 </head>
-<body>
-    <main>
-        <div class="grid w-screen h-screen place-items-center">
-            <div class="flex flex-col readex">
-                <div class="flex items-center cursor-default">
-                    <h1 class="text-center text-sky-700 text-xl md:text-4xl decoration-solid decoration-sky-800 underline-offset-4 font-bold underline ">
-                        Bonjour, mon site est en cours de préparation
-                    </h1>
-                    <span class="hidden sm:inline text-2xl md:text-6xl text-sky-900 ml-1 md:ml-5 font-bold">!</span>
+
+<body class="">
+    <div class="cursor-default">
+        <div class="flex flex-col readex">
+            <div class="bg-green-800">
+                <div class="flex items-center mt-2">
+                    <div class="flex flex-col w-full items-center">
+                        <div class="py-3 px-8 rounded-bl-3xl rounded-tr-3xl rounded-tl-xl rounded-br-xl bg-white ">
+                            <h1 class="w-1/2 text-green-800 font-bold text-5xl text-center">
+                                bylun
+                            </h1>
+                            <span class="text-xs mt-1">par Maxime Vigneron</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="text-center w-full mt-2 text-md md:text-xl font-semibold text-sky-900 cursor-default">Merci de revenir plus tard</span>
-                <span class="text-center w-full mt-5 text-sm text-stone-800 cursor-default">
-                    Je vous invite pour le moment à aller voir mon clone de Spotify
-                    <a href="http://spothifi.maxime-vigneron.fr" target="_blank" class="text-cyan-800 hover:text-amber-900 hover:underline hover:decoration-amber-900">
-                        ici
-                    </a>
-                </span>
-                <span class="text-center w-full mt-2 text-sm text-stone-800 cursor-default">
-                    Je vous invite aussi à aller voir mon morpion
-                    <a href="https://codepen.io/bylun/pen/ExwLxVj" target="_blank" class="text-cyan-800 hover:text-amber-900 hover:underline hover:decoration-amber-900">
-                        ici
-                    </a>
-                </span>
+                <nav class="py-3 mt-2">
+                  <ul class="grid w-3/4 mx-auto grid-cols-4 place-items-center text-md text-gray-200">
+                      <li class="hover:text-white"><a href="#about">A propos</a></li>
+                      <li class="hover:text-white"><a href="">Technos</a></li>
+                      <li class="hover:text-white"><a href="">Projets</a></li>
+                      <li class="hover:text-white"><a href="">Contact</a></li>
+                  </ul>  
+                </nav>
             </div>
+
+            <main class="mt-2">
+                <section class="pl-2">
+                    <h2 class="text-2xl md:text-3xl md:ml-[20%] text-green-900 font-bold mt-2 scroll-mt-2" id="about">A propos de moi</h2>
+                    <div class="w-3/4 grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:justify-between md:items-center mx-auto my-2">
+                        <p class="p-2 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum id harum suscipit odio molestiae. Architecto quasi, at quo quae facere tenetur eum consequuntur veniam mollitia ipsum ex culpa quia quod molestias rerum pariatur maiores ea necessitatibus, placeat nobis quis omnis voluptatibus? Earum, nulla porro? Exercitationem inventore blanditiis quam esse quas, quaerat eveniet rerum deserunt explicabo eius pariatur saepe quos magnam numquam totam voluptas commodi. Atque repellendus natus, nisi nihil asperiores recusandae doloremque hic, possimus illo porro beatae nemo. Cumque perspiciatis libero minima neque aperiam corporis ullam iure repellat, esse tenetur exercitationem fugiat hic similique perferendis reiciendis fuga soluta quidem in?</p>
+                        <iframe class="w-full h-60 md:h-80 border-2 shadow-xl border-solid rounded-lg border-green-900" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2610.863922616413!2d6.701943150439666!3d49.127219489594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479455abafbe20f7%3A0x20a4d4b8fbb7847f!2s2%20Rue%20des%20Acacias%2C%2057500%20Saint-Avold!5e0!3m2!1sen!2sfr!4v1643135339194!5m2!1sen!2sfr" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </section>
+            </main>
+
+            <span class="text-center w-full mt-5 text-sm text-stone-800 cursor-default">
+                Je vous invite pour le moment à aller voir mon clone de Spotify
+                <a href="http://spothifi.maxime-vigneron.fr" target="_blank"
+                    class="text-green-800 hover:text-lime-900 hover:underline hover:decoration-lime-900">
+                    ici
+                </a>
+            </span>
+            <span class="text-center w-full mt-2 text-sm text-stone-800 cursor-default">
+                Je vous invite aussi à aller voir mon morpion
+                <a href="https://codepen.io/bylun/pen/ExwLxVj" target="_blank"
+                    class="text-green-800 hover:text-lime-900 hover:underline hover:decoration-lime-900">
+                    ici
+                </a>
+            </span>
         </div>
+    </div>
     </main>
 </body>
+
 </html>
