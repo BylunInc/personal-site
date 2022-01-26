@@ -25,7 +25,7 @@
                 <div class="flex items-center mt-2">
                     <div class="flex flex-col w-full items-center">
                         <div class="py-3 px-8 rounded-bl-3xl rounded-tr-3xl rounded-tl-xl rounded-br-xl bg-white ">
-                            <h1 class="w-1/2 text-green-900 font-bold text-5xl text-center">
+                            <h1 class="w-1/2 text-green-800 font-bold text-5xl text-center">
                                 bylun
                             </h1>
                             <span class="text-xs mt-1">par Maxime Vigneron</span>
@@ -175,8 +175,8 @@
                         </form>
                         <h3 class="text-green-700 text-lg mb-2 mt-4">Mes autres liens: </h3>
                         <div class="my-2 flex justify-evenly">
-                            <a target="_blank" href="https://github.com/BylunInc" rel="noopener" class="flex flex-col hover:text-green-900 items-center">
-                                <i class="fab fa-github text-neutral-500 hover:text-green-900 text-4xl"></i>
+                            <a target="_blank" href="https://github.com/BylunInc" rel="noopener" class="flex flex-col hover:text-red-700 items-center group">
+                                <i class="fab fa-github text-neutral-500 group-hover:text-red-700 text-4xl"></i>
                                 GitHub
                             </a>
                         </div>
@@ -184,11 +184,11 @@
                 </section>
             </main>
             <footer class="bg-green-900 h-44 flex justify-evenly text-gray-300 items-center">
-                <a href="#about">A propos</a>
-                <a href="#technos">Technos</a>
-                <a href="#projets">Projets</a>
-                <a href="#contact">Contact</a>
-                <a target="_blank" rel="noopener" href="https://github.com/BylunInc">
+                <a href="#about" class="hover:text-white">A propos</a>
+                <a href="#technos" class="hover:text-white">Technos</a>
+                <a href="#projets" class="hover:text-white">Projets</a>
+                <a href="#contact" class="hover:text-white">Contact</a>
+                <a target="_blank" rel="noopener" href="https://github.com/BylunInc" class="hover:text-white">
                     GitHub
                 </a>
             </footer>
