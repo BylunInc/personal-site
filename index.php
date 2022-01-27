@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tailwind-output.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/code.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo-bylun.svg" type="image/x-icon">
     <meta name="description"
         content="Bienvenue sur le site portfolio de Maxime Vigneron, où je vous présente tous mes projets de développement">
     <script src="https://kit.fontawesome.com/47cf0efbc5.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
             <div class="bg-green-900 shadow-lg  z-10">
                 <div class="flex items-center mt-2">
                     <div class="flex flex-col w-full items-center">
-                        <div class="py-3 px-8 rounded-bl-3xl rounded-tr-3xl rounded-tl-xl rounded-br-xl bg-white ">
+                        <div class="py-3 px-8 rounded-bl-3xl rounded-tr-3xl rounded-tl-xl rounded-br-xl bg-white select-none">
                             <h1 class="w-1/2 text-green-800 font-bold text-5xl text-center">
                                 bylun
                             </h1>
