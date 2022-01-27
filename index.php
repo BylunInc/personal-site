@@ -128,7 +128,7 @@
                 <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-green-900"></div>
                 <section class="pl-2">
                     <h2 class="text-2xl md:text-3xl md:ml-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1" id="projets">Mes réalisations</h2>
-                    <div class="grid md:grid-cols-4 gap-4 md:gap-2 place-items-center w-3/4 mx-auto my-3">
+                    <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-4 md:gap-2 place-items-center w-3/4 mx-auto my-3">
                         <div class="border-2 border-solid border-green-900 w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
                             <img src="" alt="terragusto" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
                             <div class="w-full mt-2 border-t-2 border-solid border-t-green-900 p-2">
