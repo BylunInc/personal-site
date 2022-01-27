@@ -104,7 +104,10 @@
                                 <h4 class="text-green-700 text-md ml-1">Front-End:</h4>
                                 <div class="flex my-1 p-3 justify-around items-center border-b-2 border-solid border-b-green-900">
                                     <i class="fab fa-html5 text-3xl text-yellow-600"></i>
-                                    <i class="fab text-3xl fa-vuejs text-green-700"></i>
+                                    <div class="flex flex-col items-center">
+                                        <i class="fas text-3xl fa-mountain text-slate-600"></i>
+                                        <span>AlpineJs</span>
+                                    </div>
                                     <i class="fab fa-sass text-3xl text-pink-500"></i>
                                     <i class="fab fa-js-square text-3xl text-yellow-400"></i>
                                     
