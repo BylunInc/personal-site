@@ -119,10 +119,6 @@
                                         <i class="fas text-3xl fa-database text-red-600"></i>
                                         <span>MySQL</span>
                                     </div>
-                                    <div class="flex flex-col items-center">
-                                        <img src="img/logo-logomark.svg" alt="Firebase logo" class="text-xl h-10 w-10">
-                                        <span>Firebase</span>
-                                    </div>
                                 </div>
                             </div>
                         </div>
