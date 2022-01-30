@@ -148,7 +148,7 @@
                 <section class="pl-2">
                     <h2 class="text-2xl md:text-3xl md:mr-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1 md:text-right" id="contact">Me contacter</h2>
                     <div class="w-3/4 mx-auto my-3">
-                        <form action="https://smartforms.dev/submit/61f09c3b7a195017922dd303" method="post" class="my-3 text-gray-300">
+                        <form action="https://smartforms.dev/submit/61f09c3b7a195017922dd303" method="post" class="my-3 text-gray-300" id="form">
                             <div class="md:w-3/4 md:mx-auto shadow-lg border-2 border-solid border-green-900 rounded-lg bg-gray-900 p-2 flex flex-col">
                                 <div class="flex w-full">
                                     <div class="flex flex-col w-1/2">
@@ -158,17 +158,21 @@
                                     </div>
                                     <div class="flex flex-col ml-2 w-1/2 text-white">
                                         <input class="w-3/4 p-[2px] text-sm bg-gray-900 border-green-600 rounded-lg border border-solid" type="text" name="nom" id="nom">
+                                        <span class="error"></span>
                                         <input class="w-3/4 p-[2px] text-sm bg-gray-900 border-green-600 my-2 rounded-lg border border-solid" type="text" name="prenom" id="prenom">
+                                        <span class="error"></span>
                                         <input class="w-3/4 p-[2px] text-sm bg-gray-900 border-green-600 rounded-lg border border-solid" type="email" name="mail" id="mail">
+                                        <span class="error"></span>
                                     </div>
 
                                 </div>
                                 <div class="flex flex-col">
                                     <label for="message">Votre message: </label>
                                     <textarea name="message" id="message" class="border-green-600 bg-gray-900 text-white p-1 my-1 rounded-lg border border-solid resize-none h-32"></textarea>
+                                    <span class="error"></span>
                                 </div>
                                 <div class="my-3 flex justify-center items-center">
-                                    <button type="submit" class="border-none rounded-xl p-2 bg-green-700 hover:bg-green-900 hover:text-white transition ease-in-out">Envoyer</button>
+                                    <button type="submit" id="btnSubmit" class="border-none rounded-xl p-2 bg-green-700 hover:bg-green-900 hover:text-white transition ease-in-out">Envoyer</button>
                                 </div>
                             </div>
                         </form>
@@ -193,6 +197,7 @@
             </footer>
         </div>
     </div>
+    <script src="js/formValidation.js"></script>
 </body>
 
 </html>
