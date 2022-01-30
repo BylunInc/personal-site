@@ -13,11 +13,13 @@ nom.addEventListener("focusout", (e) =>
         errors[0].textContent="Merci d'entrer votre nom !"; 
         errors[0].style.color="red";  
         submit.disabled = true    
+        submit.classList.replace('bg-green-700', 'bg-gray-600')
     }
     else
     {
       errors[0].textContent="";
       submit.disabled = false
+      submit.classList.replace('bg-gray-600', 'bg-green-700')
     }
 });
 
@@ -27,12 +29,14 @@ prenom.addEventListener("focusout", (e) =>
   {
       errors[1].textContent="Merci d'entrer votre prenom !"; 
       errors[1].style.color="red";
-      submit.disabled = true        
+      submit.disabled = true   
+      submit.classList.replace('bg-green-700', 'bg-gray-600')     
   }
   else
   {
     errors[1].textContent="";
     submit.disabled = false
+    submit.classList.replace('bg-gray-600', 'bg-green-700')
   }
 });
 
@@ -42,12 +46,14 @@ mail.addEventListener("focusout", (e) =>
   {
       errors[2].textContent="Merci d'entrer votre adresse mail !"; 
       errors[2].style.color="red"; 
-      submit.disabled = true       
+      submit.disabled = true 
+      submit.classList.replace('bg-green-700', 'bg-gray-600')      
   }
   else
   {
     errors[2].textContent="";
     submit.disabled = false
+    submit.classList.replace('bg-gray-600', 'bg-green-700')
   }
 });
 
@@ -57,12 +63,14 @@ message.addEventListener("focusout", (e) =>
   {
       errors[3].textContent="Merci d'entrer votre message !"; 
       errors[3].style.color="red";  
-      submit.disabled = true      
+      submit.disabled = true   
+      submit.classList.replace('bg-green-700', 'bg-gray-600')   
   }
   else
   {
     errors[3].textContent="";
     submit.disabled = false
+    submit.classList.replace('bg-gray-600', 'bg-green-700')
   }
 });
 
