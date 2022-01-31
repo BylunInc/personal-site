@@ -90,7 +90,7 @@
                             </div>
 
                             <div class="grid grid-cols-9 text-sm items-center">
-                                <span class="font-bold text-center">Next.js <i class="fab text-md md:text-lg fa-react text-red-700"></i></span>
+                                <span class="font-bold text-center">Vue.js <i class="fab text-md md:text-lg fa-vuejs text-red-700"></i></span>
                                 <div class="mx-auto col-span-7 relative w-3/4 h-2 bg-gray-700 rounded-full">
                                     <span class="absolute inset-0 h-2 w-[20%] bg-red-800 rounded-lg"></span>
                                 </div>
