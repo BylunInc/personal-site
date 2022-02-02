@@ -129,13 +129,6 @@
                     <h2 class="text-2xl md:text-3xl md:ml-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1" id="projets">Mes réalisations</h2>
                     <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-4 md:gap-2 place-items-center w-3/4 mx-auto my-3">
                         <div class="border-2 border-solid border-green-900 w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
-                            <img src="" alt="terragusto" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
-                            <div class="w-full mt-2 border-t-2 border-solid border-t-green-900 p-2">
-                                <a target="_blank" rel="noopener" href="http://terragusto.maxime-vigneron.fr" class="w-full inline-block text-center text-lg font-bold group-hover:text-red-700 hover:underline hover:decoration-red-900 ease-in-out transition">L'Atelier Terra Gusto</a>
-                                <p class="text-sm text-center">Mon premier site, conçu de A à Z durant ma formation</p>
-                            </div>
-                        </div>
-                        <div class="border-2 border-solid border-green-900 w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
                             <img src="" alt="spothifi" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
                             <div class="w-full mt-2 border-t-2 border-solid border-t-green-900 p-2">
                                 <a target="_blank" rel="noopener" href="http://spothifi.maxime-vigneron.fr" class="w-full inline-block text-center text-lg font-bold group-hover:text-red-700 hover:underline hover:decoration-red-900 ease-in-out transition">SpotHiFi</a>
