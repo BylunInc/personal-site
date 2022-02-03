@@ -153,6 +153,13 @@
                                 <p class="text-sm text-center">Clone Front-End de Spotify, crée avec TailwindCSS</p>
                             </div>
                         </div>
+                        <div class="border-2 border-solid border-green-900 w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
+                            <img src="" alt="morpion" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
+                            <div class="w-full mt-2 border-t-2 border-solid border-t-green-900 p-2">
+                                <a target="_blank" rel="noopener" href="https://codepen.io/bylun/pen/ExwLxVj" class="w-full inline-block text-center text-lg font-bold group-hover:text-red-700 hover:underline hover:decoration-red-900 ease-in-out transition">Morpion</a>
+                                <p class="text-sm text-center">Morpion réalisé dans le cadre de ma formation</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-green-900"></div>
