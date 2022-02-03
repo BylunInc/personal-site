@@ -59,13 +59,60 @@
                     <div class="w-3/4 mx-auto my-3">
                         <h3 class="text-green-700 text-lg mb-2 mt-4">Langages: </h3>
                         <div class="border-2 p-2 shadow-lg border-green-900 rounded-lg border-solid flex flex-col md:w-3/4 mx-auto">
-                            <div >
+                            <div>
                                 <h4 class="text-green-700 font-bold">Front-End: </h4>
                                 <div class="grid grid-cols-3 p-3">
-                                    <i class="fab fa-html5 text-4xl"></i>
-
+                                    <div class="group flex flex-col items-center text-yellow-600">
+                                        <i class="fab fa-html5 text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">HTML5</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-blue-600">
+                                        <i class="fab fa-css3 text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">CSS3</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-yellow-600">
+                                        <i class="fab fa-js text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">JavaScript</span>
+                                    </div>
                                 </div>
-                                
+                                <h4 class="text-green-700 font-bold">Back-End: </h4>
+                                <div class="grid grid-cols-2 p-3">
+                                    <div class="flex flex-col items-center group text-violet-600">
+                                        <i class="fab fa-php text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">PHP</span>
+                                    </div>
+                                    <div class="flex flex-col items-center group text-pink-600">
+                                        <i class="fas fa-database text-3xl  "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">MySQL</span>
+                                    </div>
+                                </div>
+                                <h4 class="text-green-700 font-bold">Frameworks: </h4>
+                                <div class="grid grid-cols-3 grid-row-2 gap-y-6 p-3">
+                                    <div class="group flex flex-col items-center text-slate-500">
+                                        <i class="fas fa-mountain text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">AlpineJS</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-green-600">
+                                        <i class="fab fa-vuejs text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Vue.js</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-cyan-600">
+                                        <i class="fab fa-react text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">ReactJS</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-purple-600">
+                                        <i class="fab fa-bootstrap text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Bootstrap 5</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-pink-600">
+                                        <i class="fab fa-sass text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">SCSS</span>
+                                    </div>
+                                    <div class="group flex flex-col items-center text-blue-600">
+                                        <i class="fas fa-wind text-3xl "></i>
+                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">TailwindCSS</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -75,9 +122,9 @@
                                 <h4 class="text-green-700 text-md ml-1">Front-End:</h4>
                                 <div class="flex my-1 p-3 justify-around items-center border-b-2 border-solid border-b-green-900">
                                     <i class="fab fa-html5 text-3xl text-yellow-600"></i>
-                                    <div class="flex flex-col items-center">
-                                        <i class="fas text-3xl fa-mountain text-slate-600"></i>
-                                        <span>AlpineJs</span>
+                                    <div class="flex flex-col items-center text-slate-600">
+                                        <i class="fas text-3xl fa-mountain "></i>
+                                        <span class="text-sm">AlpineJs</span>
                                     </div>
                                     <i class="fab fa-sass text-3xl text-pink-500"></i>
                                     <i class="fab fa-js-square text-3xl text-yellow-400"></i>
@@ -86,9 +133,9 @@
                                 <h4 class="text-green-700 text-md mt-2 ml-1">Back-End:</h4>
                                 <div class="flex my-1 p-3 justify-around items-center">
                                     <i class="fab fa-php text-3xl text-blue-700"></i>
-                                    <div class="flex flex-col items-center">
-                                        <i class="fas text-3xl fa-database text-red-600"></i>
-                                        <span>MySQL</span>
+                                    <div class="flex flex-col items-center text-red-600">
+                                        <i class="fas text-3xl fa-database "></i>
+                                        <span class="text-sm">MySQL</span>
                                     </div>
                                 </div>
                             </div>
