@@ -15,17 +15,18 @@
     <meta name="description"
         content="Bienvenue sur le site portfolio de Maxime Vigneron, où je vous présente tous mes projets de développement">
     <script src="https://kit.fontawesome.com/47cf0efbc5.js" crossorigin="anonymous"></script>
+    <script defer src='https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js'></script>
     <title>Maxime Vigneron - Développeur Web</title>
 </head>
 
-<body class="bg-gray-900 ">
+<body class="bg-[#e2decd] ">
     <div class="cursor-default">
         <div class="flex flex-col readex">
-            <div class="bg-green-900 shadow-lg  z-10">
+            <div class="bg-[#8da05a] shadow-lg  z-10">
                 <div class="flex items-center mt-2">
                     <div class="flex flex-col w-full items-center">
                         <div class="py-3 px-8 rounded-bl-3xl rounded-tr-3xl rounded-tl-xl rounded-br-xl bg-white select-none">
-                            <h1 class="w-1/2 text-green-800 font-bold text-5xl text-center">
+                            <h1 class="w-1/2 text-[#8da05a] font-bold text-5xl text-center">
                                 bylun
                             </h1>
                             <span class="text-xs mt-1">par Maxime Vigneron</span>
@@ -42,95 +43,116 @@
                 </nav>
             </div>
 
-            <main class="mt-2 text-white">
+            <main class="mt-2 text-black">
                 <section class="pl-2">
-                    <h2 class="text-2xl md:text-3xl md:ml-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1" id="about">A propos de moi</h2>
+                    <h2 class="text-2xl md:text-3xl md:ml-[20%] text-[#8da05a] font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-[#8da05a] underline-offset-1" id="about">A propos de moi</h2>
                     <div class="w-3/4 grid grid-rows-2 grid-cols-1 md:grid-cols-2 md:grid-rows-1 md:justify-between md:items-center mx-auto my-2">
                         <p class=" mb-3 md:mb-0 text-left text-sm md:text-base md:leading-7">
                             Bonjour ! Je m'appelle Maxime Vigneron, j'ai 21 ans, je viens de la région Grand-Est et je suis développeur web. Tout juste sorti de formation Développeur Web et Web Mobile, je recherche des projets afin de me forger un portfolio et de gagner en expérience. <br><br>
                             Vous pourrez trouver sur cette page toutes mes réalisations, ainsi que ma fiche technique et tous les moyens que vous avez de me joindre. <br><br>Bonne journée à vous !
                         </p>
-                        <iframe title="Google Maps Grand-Est" class="w-full h-60 md:h-80 border-2 shadow-xl border-solid rounded-lg border-green-900" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692570.0871575815!2d3.5659343705861013!3d48.77305091169526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479155dfc58fb5b1%3A0xb9c8197dcfd117fd!2sGrand%20Est!5e0!3m2!1sen!2sfr!4v1643140081219!5m2!1sen!2sfr" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe title="Google Maps Grand-Est" class="w-full h-60 md:h-80 border-2 shadow-xl border-solid rounded-lg border-[#8da05a]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2692570.0871575815!2d3.5659343705861013!3d48.77305091169526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479155dfc58fb5b1%3A0xb9c8197dcfd117fd!2sGrand%20Est!5e0!3m2!1sen!2sfr!4v1643140081219!5m2!1sen!2sfr" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </section>
-                <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-green-900"></div>
-                <section class="pl-2">
-                    <h2 class="text-2xl md:text-3xl md:mr-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1 md:text-right" id="technos">Mes Technos</h2>
+                <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-[#8da05a]"></div>
+                <section class="pl-2" x-data="{ tech : 'first' }">
+                    <h2 class="text-2xl md:text-3xl md:mr-[20%] text-[#8da05a] font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-[#8da05a] underline-offset-1 md:text-right" id="technos">Mes Technos</h2>
                     <div class="w-3/4 mx-auto my-3">
-                        <h3 class="text-green-700 text-lg mb-2 mt-4">Langages: </h3>
-                        <div class="border-2 p-2 shadow-lg border-green-900 rounded-lg border-solid flex flex-col md:w-3/4 mx-auto">
+                        <h3 class="text-[#8da05a] text-lg mb-2 mt-4 text-bold">Langages: </h3>
+                        <div>
+                            <div class="md:w-3/4 text-sm md:text-base my-3 items-center mx-auto flex justify-around ">
+                                <span class="p-3 hover:outline hover:outline-2 hover:outline-black rounded-full" @click="tech ='first'" :class="tech == 'first' ? 'bg-[#8da05a] border transition duration-150 border-none rounded-full' : ''">
+                                    Front-End
+                                </span>
+                                <span class="p-3 hover:outline hover:outline-2 hover:outline-black rounded-full" @click="tech ='second'" :class="tech == 'second' ? 'bg-[#8da05a] transition duration-150 border-none rounded-full' : ''">
+                                    Back-End
+                                </span>
+                                <span class="p-3 hover:outline hover:outline-2 hover:outline-black rounded-full" @click="tech ='third'" :class="tech == 'third' ? 'bg-[#8da05a]  transition duration-150 border-none rounded-full' : ''">
+                                    Framework
+                                </span>
+                            </div>
+                        </div>
+                        <div class="border-2 p-2 shadow-lg border-[#8da05a] bg-[#d6d3c4] rounded-lg border-solid flex flex-col md:w-3/4 mx-auto">
                             <div>
-                                <h4 class="text-green-700 font-bold">Front-End: </h4>
-                                <div class="grid grid-cols-3 p-3">
-                                    <div class="group flex flex-col items-center text-yellow-600">
-                                        <i class="fab fa-html5 text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">HTML5</span>
+                                <template x-if="tech === 'first'">
+                                    <div class="grid grid-cols-3 p-3" >
+                                        <div class="group flex flex-col items-center text-amber-800">
+                                            <i class="fab fa-html5 text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">HTML5</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-blue-600">
+                                            <i class="fab fa-css3 text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">CSS3</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-amber-700">
+                                            <i class="fab fa-js text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">JavaScript</span>
+                                        </div>
                                     </div>
-                                    <div class="group flex flex-col items-center text-blue-600">
-                                        <i class="fab fa-css3 text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">CSS3</span>
+                                    
+                                </template>
+
+                                <template x-if="tech === 'second'">
+                                    <div class="grid grid-cols-2 p-3">
+                                        <div class="flex flex-col items-center group text-violet-600">
+                                            <i class="fab fa-php text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">PHP</span>
+                                        </div>
+                                        <div class="flex flex-col items-center group text-pink-600">
+                                            <i class="fas fa-database text-3xl  "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">MySQL</span>
+                                        </div>
                                     </div>
-                                    <div class="group flex flex-col items-center text-yellow-600">
-                                        <i class="fab fa-js text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">JavaScript</span>
+                                    
+                                </template>
+                                
+                                <template x-if="tech === 'third'">
+                                    
+                                    <div class="grid grid-cols-3 grid-row-2 gap-y-6 p-3">
+                                        <div class="group flex flex-col items-center text-slate-500">
+                                            <i class="fas fa-mountain text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">AlpineJS</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-green-600">
+                                            <i class="fab fa-vuejs text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Vue.js</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-cyan-600">
+                                            <i class="fab fa-react text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">ReactJS</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-purple-600">
+                                            <i class="fab fa-bootstrap text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Bootstrap 5</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-pink-600">
+                                            <i class="fab fa-sass text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">SCSS</span>
+                                        </div>
+                                        <div class="group flex flex-col items-center text-blue-600">
+                                            <i class="fas fa-wind text-3xl "></i>
+                                            <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">TailwindCSS</span>
+                                        </div>
                                     </div>
-                                </div>
-                                <h4 class="text-green-700 font-bold">Back-End: </h4>
-                                <div class="grid grid-cols-2 p-3">
-                                    <div class="flex flex-col items-center group text-violet-600">
-                                        <i class="fab fa-php text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">PHP</span>
-                                    </div>
-                                    <div class="flex flex-col items-center group text-pink-600">
-                                        <i class="fas fa-database text-3xl  "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">MySQL</span>
-                                    </div>
-                                </div>
-                                <h4 class="text-green-700 font-bold">Frameworks: </h4>
-                                <div class="grid grid-cols-3 grid-row-2 gap-y-6 p-3">
-                                    <div class="group flex flex-col items-center text-slate-500">
-                                        <i class="fas fa-mountain text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">AlpineJS</span>
-                                    </div>
-                                    <div class="group flex flex-col items-center text-green-600">
-                                        <i class="fab fa-vuejs text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Vue.js</span>
-                                    </div>
-                                    <div class="group flex flex-col items-center text-cyan-600">
-                                        <i class="fab fa-react text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">ReactJS</span>
-                                    </div>
-                                    <div class="group flex flex-col items-center text-purple-600">
-                                        <i class="fab fa-bootstrap text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Bootstrap 5</span>
-                                    </div>
-                                    <div class="group flex flex-col items-center text-pink-600">
-                                        <i class="fab fa-sass text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">SCSS</span>
-                                    </div>
-                                    <div class="group flex flex-col items-center text-blue-600">
-                                        <i class="fas fa-wind text-3xl "></i>
-                                        <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">TailwindCSS</span>
-                                    </div>
-                                </div>
+                                </template>
                             </div>
                         </div>
 
-                        <h3 class="text-green-700 text-lg mb-2 mt-4">Ce que je préfère utiliser: </h3>
-                        <div class="border-2 border-green-900 rounded-lg border-solid flex flex-col md:w-3/4 mx-auto shadow-lg">
+                        <h3 class="text-[#8da05a] text-lg mb-2 mt-4">Ce que je préfère utiliser: </h3>
+                        <div class="border-2 border-[#8da05a] bg-[#d6d3c4] rounded-lg border-solid flex flex-col md:w-3/4 mx-auto shadow-lg">
                             <div>
-                                <h4 class="text-green-700 text-md ml-1">Front-End:</h4>
-                                <div class="flex my-1 p-3 justify-around items-center border-b-2 border-solid border-b-green-900">
-                                    <i class="fab fa-html5 text-3xl text-yellow-600"></i>
+                                <h4 class="text-[#8da05a] text-md ml-1">Front-End:</h4>
+                                <div class="flex my-1 p-3 justify-around items-center border-b-2 border-solid border-b-[#8da05a]">
+                                    <i class="fab fa-html5 text-3xl text-amber-800"></i>
                                     <div class="flex flex-col items-center text-slate-600">
                                         <i class="fas text-3xl fa-mountain "></i>
                                         <span class="text-sm">AlpineJs</span>
                                     </div>
                                     <i class="fab fa-sass text-3xl text-pink-500"></i>
-                                    <i class="fab fa-js-square text-3xl text-yellow-400"></i>
+                                    <i class="fab fa-js-square text-3xl text-amber-700"></i>
                                     
                                 </div>
-                                <h4 class="text-green-700 text-md mt-2 ml-1">Back-End:</h4>
+                                <h4 class="text-[#8da05a] text-md mt-2 ml-1">Back-End:</h4>
                                 <div class="flex my-1 p-3 justify-around items-center">
                                     <i class="fab fa-php text-3xl text-blue-700"></i>
                                     <div class="flex flex-col items-center text-pink-600">
@@ -142,69 +164,73 @@
                         </div>
                     </div>
                 </section>
-                <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-green-900"></div>
+                <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-[#8da05a]"></div>
                 <section class="pl-2">
-                    <h2 class="text-2xl md:text-3xl md:ml-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1" id="projets">Mes réalisations</h2>
+                    <h2 class="text-2xl md:text-3xl md:ml-[20%] text-[#8da05a] font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-[#8da05a] underline-offset-1" id="projets">Mes réalisations</h2>
                     <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-4 md:gap-2 place-items-center w-3/4 mx-auto my-3">
-                        <div class="border-2 border-solid border-green-900 w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
+                        <div class="border-2 border-solid border-[#8da05a] w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
                             <img src="" alt="spothifi" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
-                            <div class="w-full mt-2 border-t-2 border-solid border-t-green-900 p-2">
+                            <div class="w-full mt-2 border-t-2 border-solid border-t-[#8da05a] p-2">
                                 <a target="_blank" rel="noopener" href="http://spothifi.maxime-vigneron.fr" class="w-full inline-block text-center text-lg font-bold group-hover:text-red-700 hover:underline hover:decoration-red-900 ease-in-out transition">SpotHiFi</a>
                                 <p class="text-sm text-center">Clone Front-End de Spotify, crée avec TailwindCSS</p>
                             </div>
                         </div>
-                        <div class="border-2 border-solid border-green-900 w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
+                        <div class="border-2 border-solid border-[#8da05a] w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
                             <img src="" alt="morpion" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
-                            <div class="w-full mt-2 border-t-2 border-solid border-t-green-900 p-2">
+                            <div class="w-full mt-2 border-t-2 border-solid border-t-[#8da05a] p-2">
                                 <a target="_blank" rel="noopener" href="https://codepen.io/bylun/pen/ExwLxVj" class="w-full inline-block text-center text-lg font-bold group-hover:text-red-700 hover:underline hover:decoration-red-900 ease-in-out transition">Morpion</a>
                                 <p class="text-sm text-center">Morpion réalisé dans le cadre de ma formation</p>
                             </div>
                         </div>
                     </div>
                 </section>
-                <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-green-900"></div>
+                <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-[#8da05a]"></div>
                 <section class="pl-2">
-                    <h2 class="text-2xl md:text-3xl md:mr-[20%] text-green-800 font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-green-800 underline-offset-1 md:text-right" id="contact">Me contacter</h2>
+                    <h2 class="text-2xl md:text-3xl md:mr-[20%] text-[#8da05a] font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-[#8da05a]  underline-offset-1 md:text-right" id="contact">Me contacter</h2>
                     <div class="w-3/4 mx-auto my-3">
-                        <form action="https://smartforms.dev/submit/61f09c3b7a195017922dd303" method="post" class="my-3 text-gray-300" id="form">
-                            <div class="md:w-3/4 md:mx-auto shadow-lg border-2 border-solid border-green-900 rounded-lg bg-gray-900 p-2 flex flex-col">
+                        <form action="https://smartforms.dev/submit/61f09c3b7a195017922dd303" method="post" class="my-3 text-black" id="form">
+                            <div class="md:w-3/4 md:mx-auto shadow-lg border-2 border-solid border-[#8da05a] rounded-lg bg-[#d6d3c4] p-2 flex flex-col">
                                 <div class="flex w-full">
                                     <div class="flex flex-col w-1/2">
                                         <label for="nom">Votre nom: </label>
                                         <label for="prenom" class="my-2">Votre prénom: </label>
                                         <label for="mail">Votre adresse mail: </label>
                                     </div>
-                                    <div class="flex flex-col ml-2 w-1/2 text-white">
-                                        <input class="w-3/4 p-[2px] text-sm bg-gray-900 border-green-600 rounded-lg border border-solid" type="text" name="nom" id="nom">
+                                    <div class="flex flex-col ml-2 w-1/2 text-black">
+                                        <input class="w-3/4 p-[2px] text-sm bg-[#F0EAd2] border-green-600 rounded-lg border border-solid" type="text" name="nom" id="nom">
                                         <span class="error"></span>
-                                        <input class="w-3/4 p-[2px] text-sm bg-gray-900 border-green-600 my-2 rounded-lg border border-solid" type="text" name="prenom" id="prenom">
+                                        <input class="w-3/4 p-[2px] text-sm bg-[#F0EAd2] border-green-600 my-2 rounded-lg border border-solid" type="text" name="prenom" id="prenom">
                                         <span class="error"></span>
-                                        <input class="w-3/4 p-[2px] text-sm bg-gray-900 border-green-600 rounded-lg border border-solid" type="email" name="mail" id="mail">
+                                        <input class="w-3/4 p-[2px] text-sm bg-[#F0EAd2] border-green-600 rounded-lg border border-solid" type="email" name="mail" id="mail">
                                         <span class="error"></span>
                                     </div>
 
                                 </div>
                                 <div class="flex flex-col">
                                     <label for="message">Votre message: </label>
-                                    <textarea name="message" id="message" class="border-green-600 bg-gray-900 text-white p-1 my-1 rounded-lg border border-solid resize-none h-32"></textarea>
+                                    <textarea name="message" id="message" class="border-green-600 bg-[#F0EAd2] text-black p-1 my-1 rounded-lg border border-solid resize-none h-32"></textarea>
                                     <span class="error"></span>
                                 </div>
                                 <div class="my-3 flex justify-center items-center">
-                                    <button type="submit" id="btnSubmit" class="border-none rounded-xl p-2 bg-green-700 hover:bg-green-900 hover:text-white transition ease-in-out">Envoyer</button>
+                                    <button type="submit" id="btnSubmit" class="border-none rounded-xl p-2 bg-[#8da05a] hover:bg-[#8da05a] hover:text-white transition ease-in-out">Envoyer</button>
                                 </div>
                             </div>
                         </form>
-                        <h3 class="text-green-700 text-lg mb-2 mt-4">Mes autres liens: </h3>
+                        <h3 class="text-[#8da05a] text-lg mb-2 mt-4">Mes autres liens: </h3>
                         <div class="my-2 flex justify-evenly">
                             <a target="_blank" href="https://github.com/BylunInc" rel="noopener" class="flex flex-col hover:text-red-700 items-center group">
                                 <i class="fab fa-github text-neutral-500 group-hover:text-red-700 text-4xl"></i>
                                 GitHub
                             </a>
+                            <a target="_blank" href="https://www.linkedin.com/in/maxime-vigneron-267084230" rel="noopener" class="flex flex-col hover:text-red-700 items-center group">
+                                <i class="fab fa-linkedin text-neutral-500 group-hover:text-red-700 text-4xl"></i>
+                                Linkedin
+                            </a>
                         </div>
                     </div>
                 </section>
             </main>
-            <footer class="bg-green-900 h-44 flex justify-evenly text-gray-300 items-center">
+            <footer class="bg-[#8da05a] h-44 flex justify-evenly text-gray-300 items-center">
                 <a href="#about" class="hover:text-white">A propos</a>
                 <a href="#technos" class="hover:text-white">Technos</a>
                 <a href="#projets" class="hover:text-white">Projets</a>
