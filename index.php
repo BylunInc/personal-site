@@ -133,7 +133,7 @@
                                 <h4 class="text-green-700 text-md mt-2 ml-1">Back-End:</h4>
                                 <div class="flex my-1 p-3 justify-around items-center">
                                     <i class="fab fa-php text-3xl text-blue-700"></i>
-                                    <div class="flex flex-col items-center text-red-600">
+                                    <div class="flex flex-col items-center text-pink-600">
                                         <i class="fas text-3xl fa-database "></i>
                                         <span class="text-sm">MySQL</span>
                                     </div>
