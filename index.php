@@ -58,7 +58,7 @@
                 <section class="pl-2" x-data="{ tech : 'first' }">
                     <h2 class="text-2xl md:text-3xl md:mr-[20%] text-[#8da05a] font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-[#8da05a] underline-offset-1 md:text-right" id="technos">Mes Technos</h2>
                     <div class="w-3/4 mx-auto my-3">
-                        <h3 class="text-[#8da05a] text-lg mb-2 mt-4 text-bold">Langages: </h3>
+                        <h3 class="text-[#8da05a] md:text-2xl text-lg font-bold mb-2 mt-4 text-bold">Langages: </h3>
                         <div>
                             <div class="md:w-3/4 text-sm md:text-base my-3 items-center mx-auto flex justify-around ">
                                 <span class="p-3 hover:outline hover:outline-2 hover:outline-black rounded-full" @click="tech ='first'" :class="tech == 'first' ? 'bg-[#8da05a] border transition duration-150 border-none rounded-full' : ''">
@@ -72,19 +72,19 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="border-2 p-2 shadow-lg border-[#8da05a] bg-[#d6d3c4] rounded-lg border-solid flex flex-col md:w-3/4 mx-auto">
+                        <div class="border-2 group p-2 shadow-lg border-[#8da05a] bg-[#d6d3c4] rounded-lg border-solid grid md:h-48 place-items-center md:w-1/2 mx-auto">
                             <div>
                                 <template x-if="tech === 'first'">
-                                    <div class="grid grid-cols-3 p-3" >
-                                        <div class="group flex flex-col items-center text-amber-800">
+                                    <div class="grid grid-cols-3 gap-6 w-full" >
+                                        <div class=" flex flex-col items-center text-amber-800">
                                             <i class="fab fa-html5 text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">HTML5</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-blue-600">
+                                        <div class=" flex flex-col items-center  text-blue-600">
                                             <i class="fab fa-css3 text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">CSS3</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-amber-700">
+                                        <div class="flex flex-col items-center text-amber-700">
                                             <i class="fab fa-js text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">JavaScript</span>
                                         </div>
@@ -93,12 +93,12 @@
                                 </template>
 
                                 <template x-if="tech === 'second'">
-                                    <div class="grid grid-cols-2 p-3">
-                                        <div class="flex flex-col items-center group text-violet-600">
+                                    <div class="grid grid-cols-2 gap-6 w-full">
+                                        <div class="flex flex-col items-center text-violet-600">
                                             <i class="fab fa-php text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">PHP</span>
                                         </div>
-                                        <div class="flex flex-col items-center group text-pink-600">
+                                        <div class="flex flex-col items-center text-pink-600">
                                             <i class="fas fa-database text-3xl  "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">MySQL</span>
                                         </div>
@@ -108,28 +108,28 @@
                                 
                                 <template x-if="tech === 'third'">
                                     
-                                    <div class="grid grid-cols-3 grid-row-2 gap-y-6 p-3">
-                                        <div class="group flex flex-col items-center text-slate-500">
+                                    <div class="grid grid-cols-3 grid-row-2 gap-6 w-full">
+                                        <div class=" flex flex-col items-center text-slate-500">
                                             <i class="fas fa-mountain text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">AlpineJS</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-green-600">
+                                        <div class=" flex flex-col items-center text-green-600">
                                             <i class="fab fa-vuejs text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Vue.js</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-cyan-600">
+                                        <div class=" flex flex-col items-center text-cyan-600">
                                             <i class="fab fa-react text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">ReactJS</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-purple-600">
+                                        <div class=" flex flex-col items-center text-purple-600">
                                             <i class="fab fa-bootstrap text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">Bootstrap 5</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-pink-600">
+                                        <div class=" flex flex-col items-center text-pink-600">
                                             <i class="fab fa-sass text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">SCSS</span>
                                         </div>
-                                        <div class="group flex flex-col items-center text-blue-600">
+                                        <div class=" flex flex-col items-center text-blue-600">
                                             <i class="fas fa-wind text-3xl "></i>
                                             <span class="group-hover:opacity-100 md:opacity-0 duration-175 transition-opacity text-sm">TailwindCSS</span>
                                         </div>
@@ -138,8 +138,8 @@
                             </div>
                         </div>
 
-                        <h3 class="text-[#8da05a] text-lg mb-2 mt-4">Ce que je préfère utiliser: </h3>
-                        <div class="border-2 border-[#8da05a] bg-[#d6d3c4] rounded-lg border-solid flex flex-col md:w-3/4 mx-auto shadow-lg">
+                        <h3 class="text-[#8da05a] md:text-2xl text-lg font-bold mb-2 mt-4">Ce que je préfère utiliser: </h3>
+                        <div class="border-2 border-[#8da05a] bg-[#d6d3c4] rounded-lg border-solid flex flex-col md:w-1/2 mx-auto shadow-lg">
                             <div>
                                 <h4 class="text-[#8da05a] text-md ml-1">Front-End:</h4>
                                 <div class="flex my-1 p-3 justify-around items-center border-b-2 border-solid border-b-[#8da05a]">
@@ -167,7 +167,7 @@
                 <div class="h-1 my-6 w-5/6 md:w-3/4 mx-auto rounded-full  bg-[#8da05a]"></div>
                 <section class="pl-2">
                     <h2 class="text-2xl md:text-3xl md:ml-[20%] text-[#8da05a] font-bold mt-2 scroll-mt-2 underline decoration-2 decoration-[#8da05a] underline-offset-1" id="projets">Mes réalisations</h2>
-                    <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-4 md:gap-2 place-items-center w-3/4 mx-auto my-3">
+                    <div class="grid xl:grid-cols-4 sm:grid-cols-2 gap-6 md:gap-2 place-items-center w-3/4 mx-auto my-3">
                         <div class="border-2 border-solid border-[#8da05a] w-52 h-[16rem] shadow-lg rounded-xl hover:scale-105 transition ease-in-out group">
                             <img src="" alt="spothifi" class="h-36 w-full rounded-tr-xl rounded-tl-xl">
                             <div class="w-full mt-2 border-t-2 border-solid border-t-[#8da05a] p-2">

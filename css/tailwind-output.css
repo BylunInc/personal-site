@@ -559,6 +559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 13rem;
 }
 
+.w-4\/6 {
+  width: 66.666667%;
+}
+
 .cursor-default {
   cursor: default;
 }
@@ -624,6 +628,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-y-6 {
@@ -695,11 +703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(141 160 90 / var(--tw-border-opacity));
 }
 
-.border-green-900 {
-  --tw-border-opacity: 1;
-  border-color: rgb(20 83 45 / var(--tw-border-opacity));
-}
-
 .border-green-600 {
   --tw-border-opacity: 1;
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
@@ -730,34 +733,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#F0EAd2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 234 210 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b3ae98\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(179 174 152 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#cfcbb7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(207 203 183 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e2dfcd\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 223 205 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#d3cfbb\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(211 207 187 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#d6d3c4\] {
   --tw-bg-opacity: 1;
   background-color: rgb(214 211 196 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F0EAd2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 234 210 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -833,6 +816,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -852,14 +840,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-yellow-600 {
+.text-amber-800 {
   --tw-text-opacity: 1;
-  color: rgb(202 138 4 / var(--tw-text-opacity));
+  color: rgb(146 64 14 / var(--tw-text-opacity));
 }
 
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-amber-700 {
+  --tw-text-opacity: 1;
+  color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
 .text-violet-600 {
@@ -915,31 +908,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
-}
-
-.text-yellow-500 {
-  --tw-text-opacity: 1;
-  color: rgb(234 179 8 / var(--tw-text-opacity));
-}
-
-.text-amber-500 {
-  --tw-text-opacity: 1;
-  color: rgb(245 158 11 / var(--tw-text-opacity));
-}
-
-.text-amber-600 {
-  --tw-text-opacity: 1;
-  color: rgb(217 119 6 / var(--tw-text-opacity));
-}
-
-.text-amber-800 {
-  --tw-text-opacity: 1;
-  color: rgb(146 64 14 / var(--tw-text-opacity));
-}
-
-.text-amber-700 {
-  --tw-text-opacity: 1;
-  color: rgb(180 83 9 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -999,11 +967,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
-.hover\:bg-\[\#69965b\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(105 150 91 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#8da05a\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(141 160 90 / var(--tw-bg-opacity));
@@ -1034,10 +997,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:outline-2:hover {
   outline-width: 2px;
-}
-
-.hover\:outline-1:hover {
-  outline-width: 1px;
 }
 
 .hover\:outline-black:hover {
@@ -1081,8 +1040,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 20rem;
   }
 
+  .md\:h-60 {
+    height: 15rem;
+  }
+
+  .md\:h-72 {
+    height: 18rem;
+  }
+
+  .md\:h-40 {
+    height: 10rem;
+  }
+
+  .md\:h-4 {
+    height: 1rem;
+  }
+
+  .md\:h-48 {
+    height: 12rem;
+  }
+
   .md\:w-3\/4 {
     width: 75%;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:grid-cols-2 {
@@ -1117,6 +1100,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .md\:leading-7 {
