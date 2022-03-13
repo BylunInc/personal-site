@@ -1,7 +1,10 @@
 module.exports = {
-  content: ["**/*.php"],
+  darkMode: 'class',
+  content: ["**/*.html"],
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }

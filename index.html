@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr" :class="{'dark': isDark}" v-scope>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tailwind-output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo-bylun.svg" type="image/x-icon">
+    <meta name="description"
+        content="bylun par Maxime Vigneron, votre solution pour vos sites et applications Web, sur les alentours de Saint-Avold ou a distance">
+    <script src="https://kit.fontawesome.com/47cf0efbc5.js" crossorigin="anonymous"></script>
+    
+    <title>bylun par Maxime Vigneron - Développement Web</title>
+</head>
+
+<body class="bg-[#D3D9DA] dark:bg-[#15272b] " >
+    <div class="cursor-default">
+        <div class="flex flex-col readex">
+            <div class="bg-[#526668] shadow-lg  z-10">
+                <div class="flex items-center mt-2">
+                    <div class="flex flex-col w-full items-center">
+                        <div class="py-3 px-8 rounded-bl-3xl rounded-tr-3xl rounded-tl-xl rounded-br-xl bg-white select-none">
+                            <h1 class="w-1/2 text-[#526668] font-bold text-5xl text-center">
+                                bylun
+                            </h1>
+                            <span class="text-xs mt-1">par Maxime Vigneron</span>
+                        </div>
+                    </div>
+                </div>
+                <nav class="py-3 mt-2 relative">
+                  <ul class="flex justify-between items-center w-3/5 mx-auto text-md text-gray-200">
+                      <li class="hover:text-white cursor-pointer" @click="page=1">Moi</li>
+                      <li class="hover:text-white cursor-pointer" @click="page=2">Technos</li>
+                      <li class="hover:text-white cursor-pointer" @click="page=3">Projets</li>
+                      <li class="hover:text-white cursor-pointer" @click="page=4">Liens</li>
+                      <i :class="{'fa-moon': isDark, 'fa-sun': !isDark}" class="fas absolute right-6 cursor-pointer text-2xl transition duration-150 hover:text-white" @click="toggleDarkMode"></i>
+                  </ul>  
+                </nav>
+            </div>
+
+            <main class="mt-2 text-black h-content">
+                <article class="pl-2 pb-20 h-full overflow-auto" v-if="page==1">
+                    <h2 class="text-2xl md:text-3xl md:ml-[10%] text-[#526668] dark:text-[#65bcc4] font-bold mt-2 drop-shadow-xl">Maxime Vigneron</h2>
+                    <div class="w-[80%] mx-auto mt-3 prose prose-neutral dark:text-gray-200 ">
+                        <p class="">
+                            Bonjour, je suis Maxime Vigneron, un jeune développeur web Front-End cherchant à s'améliorer. 
+                        </p>
+                        <p>
+                            Sorti de formation il y a peu, je cherche aujourd'hui des <span class="text-[#526668] dark:text-[#65bcc4]">missions freelances</span> afin de m'améliorer
+                            et aider des entreprises à se faire une place dans le monde du web.
+                        </p>
+                        <p>
+                            J'ai acquis, lors de ma formation, de nombreuses compétences dans le domaine du <span class="text-[#526668] dark:text-[#65bcc4]">développement</span>, mais aussi dans le domaine du <span class="text-[#526668] dark:text-[#65bcc4]">design</span> et de l'<span class="text-[#526668] dark:text-[#65bcc4]">optimisation SEO</span>.
+                            <br>
+                            Je suis donc tout a fait capable de vous accompagner de A à Z dans la création de votre site Web
+                        </p>
+                        <p class="text-2xl text-[#526668] dark:text-[#3997a1] font-bold italic" >A propos de moi: </p>
+                        <ul> 
+                            <li>Maxime Vigneron</li>
+                            <li>21 ans</li>
+                            <li>Baccalauréat S - Sciences de l'ingénieur</li>
+                        </ul>
+                        <p>Vous pouvez me contacter par mail à <a href="mailto:maxime.vigneron.dev@gmail.com" class="text-[#526668] hover:text-[#848888] dark:text-[#65bcc4] dark:hover:text-[#67cbd4] underline-offset-1 decoration-slate-700/50 hover:decoration-[#757a7a] dark:decoration-teal-700/50 dark:hover:decoration-teal-700 transition duration-150">maxime.vigneron.dev@gmail.com</a> si vous avez des questions ou si vous avez un projet qui vous tient à coeur</p>
+                    </div>
+                </article>
+                <article class="pl-2" v-if="page==2">
+                    <div class="md:ml-[10%] w-[80%]">
+                        <h2 class="text-2xl md:text-3xl text-[#526668] dark:text-[#65bcc4] font-bold mt-2 drop-shadow-xl">Technologies</h2>
+                        <h3 class="text-[#526668] md:ml-[10%] dark:text-[#3997a1] text-xl mb-2 mt-4 italic">Front-End </h3>
+                        <div class="grid grid-cols-2 py-3 gap-2 md:w-1/2 mx-auto ">
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-html5 text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">HTML5</span>
+                            </div>
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-css3 text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">CSS3</span>
+                            </div>
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-js-square text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">JavaScript</span>
+                            </div>
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-bootstrap text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">Bootstrap</span>
+                            </div>
+                        </div>
+
+                        <h3 class="text-[#526668] md:ml-[10%] dark:text-[#3997a1] text-xl mb-2 mt-4 italic">Framework Front-End </h3>
+                        <div class="grid grid-cols-2 py-3 gap-2 md:w-1/2 mx-auto ">
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-react text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">ReactJs</span>
+                            </div>
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-vuejs text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">VueJs</span>
+                            </div> 
+                        </div>
+
+                        <h3 class="text-[#526668] md:ml-[10%] dark:text-[#3997a1] text-xl mb-2 mt-4 italic">Back-End </h3>
+                        <div class="grid grid-cols-2 py-3 gap-2 md:w-1/2 mx-auto ">
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fab fa-php text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">PHP</span>
+                            </div>
+                            <div class="flex justify-start items-center group text-[#656868] dark:text-[#90aeb1] group-hover:text-[#c9c1c1] dark:hover:bg-gray-400/10 hover:bg-gray-400/30 p-2 rounded-xl transition duration-200">
+                                <i class="fas fa-database text-5xl mr-6 text dark:group-hover:text-[#c9c1c1] group-hover:text-black"></i>
+                                <span class="dark:group-hover:text-[#c9c1c1] group-hover:text-black">Base de données</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+                
+                <article class="pl-2 " v-if="page==3">
+                    <div class="md:ml-[10%] w-[80%] prose">
+                        <h2 class="text-2xl md:text-3xl text-[#526668] dark:text-[#65bcc4] font-bold mt-2 drop-shadow-xl">Projets</h2>
+                        <ul class="dark:text-gray-200 ">
+                            <li>
+                                <a href="https://codepen.io/bylun/pen/ExwLxVj" class="text-[#526668] hover:text-[#848888] dark:text-[#65bcc4] dark:hover:text-[#67cbd4] underline-offset-1 decoration-slate-700/50 hover:decoration-[#757a7a] dark:decoration-teal-700/50 dark:hover:decoration-teal-700 transition duration-150">Un morpion</a>, réalisé dans le cadre de ma formation
+                            </li>
+                            <li>
+                                <a href="http://spothifi.maxime-vigneron.fr" class="text-[#526668] hover:text-[#848888] dark:text-[#65bcc4] dark:hover:text-[#67cbd4] underline-offset-1 decoration-slate-700/50 hover:decoration-[#757a7a] dark:decoration-teal-700/50 dark:hover:decoration-teal-700 transition duration-150">SpotHifi</a>, un clone de Spotify que j'ai réalisé pour entrainer mes capacitées d'intégration
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                
+                <article class="pl-2" v-if="page==4">
+                    <h2 class="text-2xl md:text-3xl md:ml-[10%] text-[#526668] font-bold mt-2  drop-shadow-xl dark:text-[#65bcc4]" id="contact">Liens pratiques</h2>
+                    <div class="md:ml-[10%] w-[80%] prose">
+                        <h3 class="text-[#526668] dark:text-[#3997a1] text-xl mb-2 mt-4 italic">Vous pouvez aussi me trouver ici: </h3>
+                        <ul class="dark:text-gray-200 my-2">
+                            <li>
+                                <a target="_blank" href="https://www.linkedin.com/in/maxime-vigneron-267084230" rel="noopener" class="text-[#526668] hover:text-[#848888] dark:text-[#65bcc4] dark:hover:text-[#67cbd4] underline-offset-1 decoration-slate-700/50 hover:decoration-[#757a7a] dark:decoration-teal-700/50 dark:hover:decoration-teal-700 transition duration-150">
+                                    Linkedin
+                                </a>
+
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://github.com/BylunInc" rel="noopener" class="text-[#526668] hover:text-[#848888] dark:text-[#65bcc4] dark:hover:text-[#67cbd4] underline-offset-1 decoration-slate-700/50 hover:decoration-[#757a7a] dark:decoration-teal-700/50 dark:hover:decoration-teal-700 transition duration-150">
+                                    GitHub
+                                </a>
+
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </article>
+            </main>
+            <footer class="bg-[#526668] h-16 fixed bottom-0 left-0 w-screen text-gray-100 text-center text-xs flex justify-evenly items-center">
+                <span>Tous droits réservés - Maxime Vigneron - 2022</span>
+            </footer>
+        </div>
+    </div>
+    <script src="https://unpkg.com/petite-vue@0.2.2/dist/petite-vue.iife.js"></script>
+    <script>
+        PetiteVue.createApp({
+            page: 1,
+            nom: "",
+            isDark : window.matchMedia('(prefers-color-scheme: dark)').matches,
+            toggleDarkMode() {
+                this.isDark = !this.isDark
+            }
+            
+        }).mount()
+    </script>
+</body>
+
+</html>
